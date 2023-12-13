@@ -1,0 +1,191 @@
+/* Add style to the whole page*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #171c22;
+    color : white;
+}
+
+/* Style circles on the top left */
+#circle_1 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #01a1ed;
+    margin-left: -50px;
+    margin-bottom: -40px;
+}
+#circle_2 {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #01a1ed;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Home as grid */
+.Home {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 600px auto;
+    margin : 2% 1% 1% 1%;
+    column-gap: 1%;
+}
+.Image {
+    text-align: center;
+}
+.Image > div {
+    text-align: center;
+}
+.Image > div > img {
+    width: 50%;
+    margin: 3%;
+    padding: 1%;
+    background-color: #2c3541;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #01a1ed;
+}
+.Image > img {
+    position: absolute;
+    width: 4%;
+    margin: -6.5% -1% -1% -8.5%;
+}
+.Personal_info {
+    display: grid;
+    align-items: left;
+}
+.Greeting {
+    font-size: 2em;
+}
+.Greeting > h1 {
+    display: inline;
+}
+.Greeting > p {
+    display: inline-block;
+    font-weight: 100;
+    font-size: 2em;
+}
+#FullName{
+    display: block;
+}
+#Designation{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #01a1ed;
+}
+#ContactMe{ 
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.Contacts {
+    display: grid;
+    grid-row-gap: 10px;
+}
+.ContactItems {
+    margin-bottom: 1%;
+}
+.ContactItem {
+    display: inline;
+}
+.ContactItem > img {
+    width: 5%;
+    display: inline;
+    margin-bottom: -2%;
+}
+.ContactItem > p {
+    display: inline;
+    font-size: 1.3em;
+    margin-left: 2%;
+}
+br {
+    display: none;
+}
+@media only screen and (max-width: 430px){
+    .Home {
+        display: grid;
+        grid-template-columns: 97%;
+        justify-content: center;
+        margin : 1%;
+        margin-top: 5%;
+        column-gap: 1%;
+    }
+    .Image {
+        text-align: center;
+    }
+    .Image > div {
+        text-align: center;
+    }
+    .Image > div > img {
+        width: 50%;
+        padding: 1%;
+        background-color: #2c3541;
+        text-align: center;
+        border-radius: 50%;
+        border: 3px solid #01a1ed;
+    }
+    .Image > img {
+        position: absolute;
+        width: 10%;
+        margin: -15% -1% -1% -20%;
+    }
+    .Personal_info {
+        display: grid;
+        align-items: left;
+    }
+    .Greeting {
+        font-size: 95%;
+        text-align: center;
+    }
+    .Greeting > h1 {
+        display: inline;
+    }
+    .Greeting > p {
+        display: inline-block;
+        font-weight: 100;
+        font-size: 2em;
+    }
+    #FullName{
+        display: block;
+    }
+    #Designation{
+        font-size: 0.8em;
+        font-weight: 300;
+        color: #01a1ed;
+    }
+    #ContactMe{ 
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    
+    .Contacts {
+        display: grid;
+        justify-content: center;
+        grid-row-gap: 10px;
+        font-size: 0.8em;
+    }
+    .ContactItems {
+        display: grid;
+        grid-template-columns: 98%;
+        justify-content: center;
+    }
+    .ContactItem{
+        text-align: center;
+        margin: 0.5%;
+    }
+    .ContactItem > img {
+        width: 15%;
+    }
+    .ContactItem > p {
+        margin: 0%;
+    }
+}
